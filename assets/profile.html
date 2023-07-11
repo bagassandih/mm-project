@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="profile()">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+    <p> <a class="navbar-brand" href="#">MM Project Testing</a></p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item"> <a class="nav-link" href="./login.html">Sign in <span class="sr-only">(current)</span></a> </li>
+	      <li class="nav-item"> <a class="nav-link" href="./register.html">Sign Up</a> </li>
+        <li class="nav-item active"> <a class="nav-link active" href="#">My Profile</a> </li>
+        </ul>
+    </div>
+  </nav>
+</header>
+	
+<div class="jumbotron d-flex vh-100 m-0">
+  <div class="container col-md-4 mt-5">
+    	<img src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png" class="img-fluid"> 
+  </div>
+	
+  <div class="container col-md-4 mt-5">
+	<h1 class="pb-4">
+	 	Hi, <span id="greetings"></span>
+	 </h1>
+	 
+<table width="500" border="0" cellpadding="5px">
+  <tbody>
+    <tr>
+      <th>FIRST NAME</th>
+      <td id="table-first_name"></td>
+    </tr>
+    <tr>
+      <th>LAST NAME</th>
+      <td id="table-last_name"></td>
+    </tr>
+    <tr>
+     <th>GENDER</th>
+      <td id="table-gender"></td>
+    </tr>
+	<tr>
+     <th>EMAIL</th>
+      <td id="table-email"></td>
+    </tr>
+	<tr>
+     <th>VERIFIED</th>
+      <td class="text-danger" id="table-is_verified"> Not Yet </td>
+    </tr>
+	 <tr>
+		<td>
+		</td>
+	 	<td id="table-button_verified"> 
+			
+		</td>
+	 </tr>
+   <tr>
+      <td colspan="2">
+        <button type="button" class="btn-primary mt-2 w-100 btn-lg" onclick="logout()">Logout</button>
+      </td>
+   </tr>
+  </tbody>
+</table>
+
+	  
+  </div>
+	
+
+</div>
+<footer>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white justify-content-center"> 
+    <p class="p-0 m-2"> MM Project Testing &copy;2023 - Sanrize x Chocorange </p>
+  </nav>	
+</footer>
+<script src="./js/fetch/main.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
