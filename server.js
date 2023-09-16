@@ -40,7 +40,7 @@ async function startServer(){
   // ***** connect to db
   try {
     // await mongoose.connect(`${serverUrl}/${database}`);
-    await mongoose.connect(`${atlas}`);
+    await mongoose.connect(`${atlas}`);    
     console.log(`🚀 Connected to ${database}: atlas`);
   } catch (err) {
     console.log('Failed to connect to MongoDB', err);
